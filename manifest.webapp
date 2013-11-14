@@ -1,6 +1,6 @@
 {
     "version": "0.1",
-    "name": "Your App",
+    "name": "Wouerner",
     "description": "Your new awesome Open Web App",
     "launch_path": "/",
     "icons": {
@@ -9,8 +9,8 @@
         "128": "/img/icons/mortar-128.png"
     },
     "developer": {
-        "name": "Your Name",
-        "url": "http://yourawesomeapp.com"
+        "name": "Wouerner",
+        "url": "http://wouerner.eti.br"
     },
     "installs_allowed_from": ["*"]
 }
