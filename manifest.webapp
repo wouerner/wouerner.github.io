@@ -1,15 +1,32 @@
 {
-  "name": "My App",
-  "description": "My elevator pitch goes here",
-  "launch_path": "/",
-  "icons": {
-    "128": "/img/icons/mortar-128.png",
-    "60":  "/img/icons/mortar-60.png",
-    "32":  "/img/icons/mortar-32.png"
-  },
-  "developer": {
-    "name": "Your name or organization",
-    "url": "http://your-homepage-here.org"
-  },
-  "default_locale": "en"
+    "version": "0.1",
+    "name": "teste 0001",
+    "description": "teste",
+    "launch_path": "/index.html",
+    "icons": {
+        "16": "/imgs/icons/mortar-16.png",
+        "48": "/imgs/icons/mortar-48.png",
+	"60": "/imgs/icons/mortar-60.png",
+        "128": "/imgs/icons/mortar-128.png"
+    },
+    "developer": {
+        "name": "Marcelo Buer",
+        "url": "http://wouerner.eti.br"
+    },
+    "installs_allowed_from": ["*"],
+    "locales": {
+        "es": {
+            "description": "wouerner",
+            "developer": {
+                "url": "http://wouerner.eti.br"
+            }
+        },
+        "it": {
+            "description": "wouerner",
+            "developer": {
+                "url": "http://wouerner.eti.br"
+            }
+        }
+    },
+    "default_locale": "en"
 }
