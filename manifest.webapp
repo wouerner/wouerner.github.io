@@ -3,8 +3,8 @@
   "description": "My elevator pitch goes here",
   "launch_path": "/",
   "icons": {
-    "128": "/img/icons/mortar-128.png"
-    "60": "/img/icons/mortar-60.png"
+    "128": "/img/icons/mortar-128.png",
+    "60": "/img/icons/mortar-60.png",
     "32": "/img/icons/mortar-32.png"
   },
   "developer": {
