@@ -11,6 +11,5 @@
     "developer": {
         "name": "Wouerner",
         "url": "http://wouerner.eti.br"
-    },
-    "installs_allowed_from": ["*"]
+    }
 }
