@@ -29,9 +29,5 @@
 			}
 		}
 	},
-	"default_locale": "en",
-	"permissions": {
-		"systemXHR": {},
-        "description":" localização"
-	}
+	"default_locale": "en"
 }
