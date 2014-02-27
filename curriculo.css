@@ -1,0 +1,36 @@
+body{
+    color : white;
+    background: url('bg01.png') white repeat center center;
+    
+    }
+
+.panel-heading{
+    color:white;
+    background: black;
+    }
+
+#conteudo .panel{
+    color:white;
+    background: #545454;
+
+}
+#conteudo .panel-heading{
+    color:white;
+    background: url('zwartevilt.png') black;
+    font-family: 'dearestregular', cursive;
+
+}
+#conteudo .panel-heading h1{
+    color:white;
+    margin: 0.2pt;
+
+}
+
+#conteudo h1:first-letter{
+    font-size: 44pt;
+    font-family: 'dearestregular', cursive;
+}
+#conteudo h2:first-letter{
+    font-size: 34pt;
+    font-family: 'dearestregular', cursive;
+}
