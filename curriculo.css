@@ -1,7 +1,6 @@
 body{
     color : white;
     background: url('bg01.png') white repeat center center;
-    
     }
 
 .panel-heading{
@@ -14,23 +13,33 @@ body{
     background: #545454;
 
 }
+
 #conteudo .panel-heading{
     color:white;
     background: url('zwartevilt.png') black;
     font-family: 'dearestregular', cursive;
-
 }
 #conteudo .panel-heading h1{
     color:white;
-    margin: 0.2pt;
-
+    margin: 0.1pt;
 }
 
 #conteudo h1:first-letter{
     font-size: 44pt;
     font-family: 'dearestregular', cursive;
 }
+
 #conteudo h2:first-letter{
     font-size: 34pt;
     font-family: 'dearestregular', cursive;
 }
+
+#conteudo p {
+    
+        text-indent: 2em;
+}
+
+#conteudo .well {
+    
+        background: black;
+    }
