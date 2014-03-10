@@ -1,6 +1,8 @@
-body{
+body {
     color : white;
     background: url('bg01.png') white repeat center center;
+    margin-top: 0.6em;
+    font-size: 14pt;
     }
 
 .panel-heading{
@@ -43,3 +45,7 @@ body{
     
         background: black;
     }
+#conteudo h1.red {
+    color:#900000;
+    }
+
