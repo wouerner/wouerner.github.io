@@ -26,9 +26,10 @@ body {
     margin: 0.1pt;
 }
 
-#conteudo h1:first-letter{
-    font-size: 44pt;
+#conteudo h1{
+    font-size: 64pt;
     font-family: 'dearestregular', cursive;
+     text-shadow: 2px 2px #ffffff;
 }
 
 #conteudo h2:first-letter{
