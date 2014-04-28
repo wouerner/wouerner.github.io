@@ -1,13 +1,15 @@
 body {
     background: url('bg01.png') white repeat center center;
     margin-top: 0.6em;
+    margin-bottom: 0.6em;
     font-size: 14pt;
-    }
+    box-shadow:         0px 7px 5px 10px rgba(50, 50, 50, 0.75);
+}
 
 #conteudo h1{
     font-size: 64pt;
     font-family: 'dearestregular', cursive;
-     text-shadow: 2px 2px #ffffff;
+    text-shadow: 2px 2px #ffffff;
 }
 
 #conteudo h2:first-letter{
@@ -384,8 +386,8 @@ h2, h4{
 	100% {  background:rgba(99,222,0,0);  }
 }
 .cursor {
-  background:#63de00; 
-  display:inline-block;
+  background:#63de00;
+  display:block;
   width:11px;
   height:19px;
   margin-bottom:-3px;
