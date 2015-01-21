@@ -1,149 +1,252 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt_BR">
     <head>
         <meta charset="UTF-8">
         <style>
-            @import "http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css";
-            @import "curriculo.css";
-            @import "splash.css";
+            @import "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css";
         </style>
-        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Vibur' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
-        <style>
-            #nome h1{
-                font-family: 'Vibur', cursive;
-            }
-            h1.splash{
-                font-size: 80pt;
-            }
-            body{
-                font-family: 'Source Code Pro', sans-serif;
-            }
-        </style>
-        <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css">
-        <link rel="stylesheet" type="text/css" href="curriculo.css">
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-        <style>
-        @font-face {
-            font-family: 'dearestregular';
-            src: url('Dearest-webfont.eot');
-            src: url('Dearest-webfont.eot?#iefix') format('embedded-opentype'),
-                 url('Dearest-webfont.woff') format('woff'),
-                 url('Dearest-webfont.ttf') format('truetype'),
-                 url('Dearest-webfont.svg#dearestregular') format('svg');
-            font-weight: normal;
-            font-style: normal;
-        }
-        </style>
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     </head>
     <body class="container">
         <div class="row">
-            <div class="col-12">
-                    <div id="toolbar">
-                        <div class="top">
-                            <div id="lights">
-                                <div class="light red">
-                                </div>				
-                                <div class="light yellow">
-                                </div>
-                                <div class="light green">
-                                </div>
-                            </div>
-                            <div id="title">
-                                <div class="folder">
-                                    <div class="tab"></div>
-                                    <div class="body"></div>
-                                </div>
-                                Wouerner.github.io
-                            </div>
-                            <div id="bubble">
-                                <div class="shine"></div>
-                                <div class="glow"></div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-md-2">
+                <img title="Wouerner Brandão" class="img-responsive img-thumbnail" src="wouerner.jpg"></img>
+            </div>
+            <div class="col-md-10">
+                <h2 class="text-center">Wouerner Brandão</h2>
+                <p>Oi, meu nome é <strong>Wouerner Brandão</strong> (pronúncia-se <strong>uer-ner</strong>), tenho 25 anos, nascido em 27 de Novembro de 1989, noivo de Tereza Cristina, brasiliense, morador do <a target="blank" href="https://www.google.com.br/maps/@-15.9250398,-48.0989367,14z">Recanto das Emas – DF</a>, bacharel em Sistemas de informação pela <a href="http://udf.edu.br/">UDF</a> no ano de 2012.</p>
+                <p>Busco oportunidade na área de desenvolvimento web, trabalho como desenvolvedor web há 6 anos entre emprego CLT e Freelancer.</p>
+                <p>Atualmente estou me  capacitando como profissional em outras linguagens de programação, como: Ruby, Python e Javascript.</p>
+                <p>Minha pretensão salarial de <strong>3.000,00+</strong> reais fale comigo através dos contatos: 61-9917-9736 e o e-mail wouerner@gmail.com</p>
+                <p>Curriculo em <a href="wouerner.pdf">PDF</a>.</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12">
-                    <div id="body">
-                        <h2 class="text-center">Apresentação:</h2>
-                        <p>Oi, meu nome é <strong>Wouerner Brandão</strong> (pronúncia-se <strong>uer-ner</strong>), tenho 25 anos, nascido em 27 de Novembro de 1989, noivo de Tereza Cristina, brasiliense, morador do <a target="blank" href="https://www.google.com.br/maps/@-15.9250398,-48.0989367,14z">Recanto das Emas – DF</a>, bacharel em Sistemas de informação pela <a href="http://udf.edu.br/">UDF</a> no ano de 2012.</p>
-                        <p>Busco oportunidade na área de desenvolvimento web, trabalho como desenvolvedor web há 6 anos entre emprego CLT e Freelancer.</p>
-                        <p>Atualmente estou me  capacitando como profissional em outras linguagens de programação, como: Ruby, Python e Javascript.</p>
-                        <p>Minha pretensão salarial de <strong>3.000,00+</strong> reais fale comigo através dos contatos: 61-9917-9736 e o e-mail wouerner@gmail.com</p>
-                        <p>Curriculo em <a href="wouerner.pdf">PDF</a>.</p>
-                        <dl>
-                            <dt><h2>Front-end</h2></dt>
-                            <dd>
-                                <p>Conhecimento em HTML semântico, microformats;</p>
-                                <p>Javascript com frameworks: Jquery, JqueryUI, Prototype, AngularJS;</p>
-                                <p>CSS: Twitter Bootstrap, Foundation, Font-awesome.</p>
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt><h2>Back-end</h2></dt>
-                            <dd>
-                            <p>Trabalho com linguagem de programação PHP com os seguintes frameworks: Zend, Symfony, CodeIgniter, Laravel. Tanto em manutenção como em criação de aplicações novas.</p>
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt><h2>CMS</h2></dt>
-                            <dd>
-                                <p>Joomla, Drupal, WordPress, administração e manutenção de plugins.</p>
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt><h2>Banco de dados</h2></dt>
-                            <dd><p>Tabalhei com os seguintes bancos de dados: MySQL (MariaDB), PostGreeSQL, Oracle e SQLServer: criação de SQL complexas, criação de relátorios, rotinas e administração dos dados.</p></dd>
-                        </dl>
-                        <dl>
-                            <dt><h2>Outras ferramentas</h2></dt>
-                            <dd>
-                                <p>VIM, Git, SVN, PHPMyAdmin, Owncloud, Gitlab, CaliberRM, StarTeam, PHPDoc, Composer, PHPMD, Moodle, Mantis, Jira, Vagrant.</p>
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt><h2>Sistemas Operacionais</h2></dt>
-                            <dd><p>Linux: Administração de Serviços como: Apache, PHP, Firewall, Samba, Ssh. Sou adepto ao software livre e usuário de Linux as mais 7 anos.</p>
-                            <p>Trabalhando com hospedagem de sistemas nos provedores: locaweb, digitalocean e hostgator.</p>
-                            </dd>
-                        </dl>
-                            <h2>Formação</h2>
-                            <p>Bacharel pelo Centro Universitário UDF em  Sistemas de Informação no ano de 2012</p>
-                            <p>Curso na X25 - PHP 5.3 OO – 64 horas</p>
-                            <p>Livros: O Programador Pragmático, Php e Mysql - Desenvolvimento Web - 3ª Edição, Aprendendo Padrões de Projeto em PHP,Web Services em PHP, Zend Framework Componentes Poderosos para PHP, Joomla! Guia do Operador, Contruindo Sites com Css e (X)Html, JQuery em Ação, Html5 e CSS3, UML na prática do problema ao sistema, Programação Shell Linux e Scrum - Gestão Ágil para projetos de Sucesso, PHP e MVC com CodeIgniter.</p>
-                            <p>Cursos On-line: Ruby -  http://www.codecademy.com</p>
-                            <h2>Experiências</h2>
-                            <h4>Projetos</h4>
-                            <p>Projetos que desenvolvi como laboratórios e para terceiros, sem necessidade de exclusividade:</p>
-                            <p> Mga12.org, br-code.in, Multiplicação, SAE, protestanto.org, Meu muro.</p>
-                            <h4>Carteira de trabalho</h4>
-                            <p><strong>Gestão TI</strong> como Programador Pleno III 6 meses e emprego atual.</p>
-                            <p><strong>Cnec</strong> como Analista de Desenvolvimento 11 meses e salario 2800,00.</p>
-                            <p><strong>Capgemini</strong> Programador Junior pelo período de 7 meses e salário 1400 reais.</p>
-                            <h4>Freelancer</h4>
-                            <p><strong>Atomtech</strong> Desenvolvedor web com Joomla  pelo período de 1 mes e 15 dias com salário de 1000 reais.</p>
-                            <p><strong>CEBAN – Centro Educacional Bandeirantes</strong> como Desenvolvedor web pelo período de 10 meses com salário: 800 reais.</p>
-                            <h4>Estágios</h4>
-                            <p><strong>DataPrev</strong> como Desenvolvedor web pelo Período de 9 meses salário: 900 reais.</p>
-                            <p><strong>CFC</strong> – Conselho Federal de Contabilidade como Suporte Técnico pelo período: 1 ano e 3 meses salário: 700 reais aproximado.</p>
-                            <p><strong>Stefanini</strong> como Atendente pelo período: 6 meses com salário: 400 reais aproximado.</p>
-                            <p><strong>CID – Centro de Inclusão Digital</strong> como Professor de Informática pelo período de 7 meses salário: 300,00</p>
+
+        <div role="tabpanel">
+            <ul role="tablist" class="nav nav-tabs" id="myTab">
+              <li class="active" role="presentation">
+                <a aria-expanded="true" aria-controls="home" data-toggle="tab" role="tab" id="home-tab" href="#home">Front-end</a></li>
+              <li role="presentation" class=""><a aria-controls="back" data-toggle="tab" role="tab" href="#back" aria-expanded="false">Back-end</a></li>
+              <li role="presentation" class=""><a aria-controls="bd" data-toggle="tab"  role="tab" href="#banco" aria-expanded="false">Banco de  Dados</a></li>
+              <li role="presentation" class=""><a aria-controls="so" data-toggle="tab"  role="tab" href="#sistema" aria-expanded="false">Plataforma</a></li>
+              <li role="presentation" class=""><a aria-controls="formacao" data-toggle="tab"  role="tab" href="#formacao" aria-expanded="false">Formação</a></li>
+              <li role="presentation" class=""><a aria-controls="experiencia" data-toggle="tab"  role="tab" href="#experiencia" aria-expanded="false">Experiência</a></li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div aria-labelledby="home-tab" id="home" class="tab-pane fade active in" role="tabpanel">
+                <p>Conhecimento em HTML semântico, microformats;</p>
+                <p>Javascript com frameworks: Jquery, JqueryUI, Prototype, AngularJS;</p>
+                <p>CSS: Twitter Bootstrap, Foundation, Font-awesome.</p>
+                <div class="row">
+                  <div class="col-sm-6 col-md-2">
+                    <div class="thumbnail">
+                      <img src="HTML5.png" alt="">
+                      <div class="caption">
+                        <h3 class="text-center">HTML</h3>
+                      </div>
                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-2">
+                    <div class="thumbnail">
+                      <img src="JavaScript.png" alt="">
+                      <div class="caption">
+                        <h3 class="text-center">JavaScript</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-2">
+                    <div class="thumbnail">
+                      <img src="jquery.png" alt="">
+                      <div class="caption">
+                        <h3 class="text-center">jQuery</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-2">
+                    <div class="thumbnail">
+                      <img src="jqueryui.png" alt="">
+                      <div class="caption">
+                        <h3 class="text-center">JqueryUI</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-2">
+                    <div class="thumbnail">
+                      <img src="Angular.png" alt="">
+                      <div class="caption">
+                        <h3 class="text-center">AngularJS</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-2">
+                    <div class="thumbnail">
+                      <img src="twitter-bootstrap.jpg" alt="">
+                      <div class="caption">
+                        <h3 class="text-center">Twitter Bootstrap</h3>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+                <div class="row">
+                  <div class="col-sm-6 col-md-2">
+                    <div class="thumbnail">
+                      <img src="css.jpeg" alt="">
+                      <div class="caption">
+                        <h3 class="text-center">CSS</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-2">
+                    <div class="thumbnail">
+                      <img src="zurb.png" alt="">
+                      <div class="caption">
+                        <h3 class="text-center">Foundation Zurb</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-2">
+                    <div class="thumbnail">
+                      <img src="font-awesome.png" alt="">
+                      <div class="caption">
+                        <h3>Font Awesome</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-2">
+                    <div class="thumbnail">
+                      <img src="c3.png" alt="">
+                      <div class="caption">
+                        <h3>C3.js Charts</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div aria-labelledby="back" id="back" class="tab-pane fade" role="tabpanel">
+                <p>Trabalho com linguagem de programação PHP com os seguintes frameworks: Zend, Symfony, CodeIgniter, Laravel. Tanto em manutenção como em criação de aplicações novas.</p>
+                <div class="row">
+                  <div class="col-sm-6 col-md-2">
+                    <div class="thumbnail">
+                      <img src="php.jpg" alt="">
+                      <div class="caption">
+                        <h3>PHP</h3>
+                        <p>...</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-2">
+                    <div class="thumbnail">
+                      <img src="ZendFramework.png" alt="">
+                      <div class="caption">
+                        <h3>Zend Framework</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-2">
+                    <div class="thumbnail">
+                      <img src="symfony.png" alt="">
+                      <div class="caption">
+                        <h3>Symfony</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-2">
+                    <div class="thumbnail">
+                      <img src="codeigniter.png" alt="">
+                      <div class="caption">
+                        <h3>CodeIgniter</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-2">
+                    <div class="thumbnail">
+                      <img src="laravel.png" alt="">
+                      <div class="caption">
+                        <h3>Laravel</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div aria-labelledby="back" id="banco" class="tab-pane fade" role="tabpanel">
+                <p>Tabalhei com os seguintes bancos de dados: MySQL (MariaDB), PostGreeSQL, Oracle e SQLServer: criação de SQL complexas, criação de relátorios, rotinas e administração dos dados.</p>
+                <div class="row">
+                  <div class="col-sm-6 col-md-2">
+                    <div class="thumbnail">
+                      <img src="mysql.png" alt="">
+                      <div class="caption">
+                        <h3 class="text-center">MySQL</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-2">
+                    <div class="thumbnail">
+                      <img src="postgresql.png" alt="">
+                      <div class="caption">
+                        <h3 class="text-center">PostgreSQL</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-2">
+                    <div class="thumbnail">
+                      <img src="oracle-database.png" alt="">
+                      <div class="caption">
+                        <h3 class="text-center">Oracle</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-2">
+                    <div class="thumbnail">
+                      <img src="SQL-Server.png" alt="">
+                      <div class="caption">
+                        <h3 class="text-center">SQLServer</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div aria-labelledby="back" id="sistema" class="tab-pane fade" role="tabpanel">
+                <p>Linux: Administração de Serviços como: Apache, Ssh. Sou adepto ao software livre e usuário de Linux as mais 7 anos.</p>
+                <p>Trabalhando com hospedagem de sistemas nos provedores: locaweb, digitalocean e hostgator.</p>
+                <div class="row">
+                  <div class="col-sm-6 col-md-2">
+                    <div class="thumbnail">
+                      <img src="linux.jpeg" alt="">
+                      <div class="caption">
+                        <h3>Linux</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div aria-labelledby="back" id="formacao" class="tab-pane fade" role="tabpanel">
+                <h3>Formação</h3>
+                <p>Bacharel pelo Centro Universitário UDF em  Sistemas de Informação no ano de 2012</p>
+                <p><strong>Livros:</strong> O Programador Pragmático, Php e Mysql - Desenvolvimento Web - 3ª Edição, Aprendendo Padrões de Projeto em PHP,Web Services em PHP, Zend Framework Componentes Poderosos para PHP, Joomla! Guia do Operador, Contruindo Sites com Css e (X)Html, JQuery em Ação, Html5 e CSS3, UML na prática do problema ao sistema, Programação Shell Linux e Scrum - Gestão Ágil para projetos de Sucesso, PHP e MVC com CodeIgniter.</p>
+                <p><strong>Curso Presencial:</strong> na X25 - PHP 5.3 OO – 64 horas</p>
+                <p><strong>Cursos On-line:</strong> Ruby -  http://www.codecademy.com</p>
+              </div>
+              <div aria-labelledby="back" id="experiencia" class="tab-pane fade" role="tabpanel">
+                <h4>Projetos</h4>
+                <p>Projetos que desenvolvi como laboratórios e para terceiros, sem necessidade de exclusividade:</p>
+                <p> Mga12.org, br-code.in, Multiplicação, SAE, protestanto.org, Meu muro.</p>
+                <h4>Carteira de trabalho</h4>
+                <p><strong>Gestão TI</strong> como Programador Pleno III 7 meses e salário 4200 reais.</p>
+                <p><strong>Cnec</strong> como Analista de Desenvolvimento 11 meses e salario 2800,00.</p>
+                <p><strong>Capgemini</strong> Programador Junior pelo período de 7 meses e salário 1400 reais.</p>
+                <h4>Freelancer</h4>
+                <p><strong>Atomtech</strong> Desenvolvedor web com Joomla  pelo período de 1 mes e 15 dias com salário de 1000 reais.</p>
+                <p><strong>CEBAN – Centro Educacional Bandeirantes</strong> como Desenvolvedor web pelo período de 10 meses com salário: 800 reais.</p>
+                <h4>Estágios</h4>
+                <p><strong>DataPrev</strong> como Desenvolvedor web pelo Período de 9 meses salário: 900 reais.</p>
+                <p><strong>CFC</strong> – Conselho Federal de Contabilidade como Suporte Técnico pelo período: 1 ano e 3 meses salário: 700 reais.</p>
+                <p><strong>Stefanini</strong> como Atendente pelo período: 6 meses com salário: 400 reais aproximado.</p>
+                <p><strong>CID – Centro de Inclusão Digital</strong> como Professor de Informática pelo período de 7 meses salário: 300,00</p>
+              </div>
             </div>
+          </div>
+
         </div>
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-               m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-44121271-3', 'wouerner.github.io');
-          ga('send', 'pageview');
-
-        </script>
     </body>
 </html>
