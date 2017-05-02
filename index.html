@@ -6,6 +6,7 @@
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <title>Wouerner Brandão - Curriculo - PHP</title>
         <style>
+            @import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css";
             @import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
             @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
         </style>
@@ -22,8 +23,22 @@
                 padding-top: 1em;
             }
             .container-fluid {
-                background-color: rgb(255,255,255); 
+                /*background-color: rgb(255,255,255); */
+                background-color: rgb(0,0,0); 
                 padding-top: 1em;
+            }
+            .well {
+                background-color: rgb(30,30,30); 
+            }
+            h1, h2, h4, h6 {
+                color: rgb(255,255,255);
+            }
+            p {
+                color: rgb(255,255,255);
+            }
+            .thumbnail {
+                background-color: rgb(0,0,0); 
+
             }
             .tab-content {
                 background: url('texturetastic_gray.png');
@@ -49,7 +64,6 @@
                 -moz-border-left-colors: none;
                 border-image: none;
                 border-radius: 3px;
-                background: white;
             }
             .bs-callout-danger {
                 border-left-color: #CE4844;
@@ -67,7 +81,7 @@
                 </div>
                 <div class="col-md-10">
                     <div class="well well-sm">
-                        <h1 class="text-center">Wouerner Brandão
+                        <h1 class="animated bounce text-center">Wouerner Brandão
                             <a class="btn btn-default" href="https://plus.google.com/+wouernerbrandao/about"><i class="fa fa-google-plus"></i></a>
                             <a class="btn btn-default" href="https://www.facebook.com/wouerner">
                                 <i class="fa fa-facebook"></i></a>
@@ -96,76 +110,17 @@
                 </cards>
             </div>
             <hr>
-            <div class="row">
+            <div id="row2" class="row">
                 <div class="col-sm-12 col-md-12">
                     <h2><i class="fa fa-code"></i> Back-end</a></h2>
                 </div>
-                <div class="col-sm-6 col-md-1">
-                    <div class="thumbnail">
-                        <img src="php.jpg" alt="">
-                        <div class="caption">PHP</div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                <span class="sr-only"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-1">
-                    <div class="thumbnail">
-                        <img src="ZendFramework.png" alt="">
-                        <div class="caption"> Zend Framework </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                <span class="sr-only"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-1">
-                    <div class="thumbnail">
-                        <img src="symfony.png" alt="">
-                        <div class="caption"> Symfony </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                                <span class="sr-only"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-1">
-                    <div class="thumbnail">
-                        <img src="codeigniter.png" alt="">
-                        <div class="caption"> CodeIgniter </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                <span class="sr-only"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-1">
-                    <div class="thumbnail">
-                        <img src="laravel.png" alt="">
-                        <div class="caption"> Laravel </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                                <span class="sr-only"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-1">
-                    <div class="thumbnail">
-                        <img src="doctrine.jpg" alt="">
-                        <div class="caption">Doctrine</div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                <span class="sr-only"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <cards v-for="(card, index) in imgNames" 
+                    :src="card.img" 
+                    :key="card.img" 
+                    :caption="card.caption" 
+                    :progressbar="card.progressbar"
+                >
+                </cards>
             </div>
             <hr>
             <div id="row3" class="row">
@@ -180,10 +135,10 @@
                 >
                 </cards>
             </div>
-            </hr>
+            <hr>
             <div class="row">
                 <div class="col-sm-12">
-                    <h3><i class="fa fa-university" aria-hidden="true"></i>Formação</h3>
+                    <h2><i class="fa fa-university" aria-hidden="true"></i>Formação</h2>
                 </div>
                 <div class="col-sm-2 col-md-12">
                     <p>Bacharel pelo Centro Universitário UDF em  Sistemas de Informação no ano de 2012</p>
@@ -199,14 +154,16 @@
                     </div>
                 </div>
             </div>
+            <hr>
             <div class="row">
                 <div class="col-sm-12">
-                    <h3><i class="fa fa-diamond"></i> Experiência</a></h3>
+                    <h2><i class="fa fa-diamond"></i> Experiência</a></h2>
                 </div>
                 <div class="col-sm-12">
                     <div class="bs-callout bs-callout-info">
                         <h4>Carteira de trabalho</h4>
-                        <p><strong>CTIS</strong> como Programador PHP período 1 anos e emprego atual.</p>
+                        <p><strong>Fundep</strong> como Programador Pleno período 1 ano e emprego atual.</p>
+                        <p><strong>CTIS</strong> como Programador PHP período 1 ano</p>
                         <p><strong>Gestão TI</strong> como Programador Pleno III período 11 meses.</p>
                         <p><strong>Cnec</strong> como Analista de Desenvolvimento 11 meses . Atribuição: Construção de CMS totalmente personalizado para empresa.</p>
                         <p><strong>Capgemini</strong> Programador Junior pelo período de 7 meses.</p>
@@ -230,75 +187,18 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <hr>
+            <div id="row4" class="row">
                 <div class="col-sm-12 col-md-12">
-                    <h3><i class="fa fa-briefcase" aria-hidden="true"></i> Ferramentas</a></h3>
+                    <h2><i class="fa fa-briefcase" aria-hidden="true"></i> Ferramentas</a></h2>
                 </div>
-                <div class="col-sm-6 col-md-2">
-                    <div class="thumbnail">
-                        <img src="vim.jpeg" alt="">
-                        <div class="caption">
-                            <h3 class="text-center">Vim</h3>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-                                <span class="sr-only"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-2">
-                    <div class="thumbnail">
-                        <img src="git.png" alt="">
-                        <div class="caption">
-                            <h3 class="text-center">Git</h3>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                <span class="sr-only"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-2">
-                    <div class="thumbnail">
-                        <img src="gitlab.jpeg" alt="">
-                        <div class="caption">
-                            <h3 class="text-center">GitLab</h3>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                <span class="sr-only"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-2">
-                    <div class="thumbnail">
-                        <img src="vagrant.png" alt="">
-                        <div class="caption">
-                            <h3 class="text-center">Vagrant</h3>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                <span class="sr-only"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-2">
-                    <div class="thumbnail">
-                        <img src="subversion.png" alt="">
-                        <div class="caption">
-                            <h3 class="text-center">SVN</h3>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                <span class="sr-only"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <cards v-for="(card, index) in imgNames" 
+                    :src="card.img" 
+                    :key="card.img" 
+                    :caption="card.caption" 
+                    :progressbar="card.progressbar"
+                >
+                </cards>
             </div>
             <div class="row">
                 <div class="well well-mini">
@@ -309,10 +209,15 @@
         </div>
         <script id="cards" type="text/x-template">
                 <div class="col-sm-6 col-md-1">
+                    <transition appear
+                        name="custom-classes-transition"
+                        enter-active-class="animated tada"
+                        leave-active-class="animated bounceOutRight"
+                    >
                     <div class="thumbnail">
                         <img v-bind:src="src" alt="">
                         <div class="caption">
-                            <h5 class="text-center">{{caption}}</h5>
+                            <h6 class="text-center">{{caption}}</h6>
                         </div>
                         <div class="progress">
                             <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
@@ -320,6 +225,7 @@
                             </div>
                         </div>
                     </div>
+                    </transition>
                 </div>
         </script>
         <script  type="text/javascript">
@@ -337,17 +243,34 @@
               el: '#row1',
                 data:{
                     imgNames: [
-                        {img: "HTML5.png", caption: "HTML", progressbar: 60}, 
-                        {img: 'JavaScript.png', caption: "ecmascript", progressbar: 60},
-                        {img: 'jquery.png', caption: "jQuery", progressbar: 60},
-                        {img: 'Angular.png', caption: "Angular", progressbar: 60},
-                        {img: 'jqueryui.png', caption: "jQueryUI", progressbar: 60},
-                        {img: 'twitter-bootstrap.jpg', caption: "Bootstrap", progressbar: 60},
-                        {img: 'css.jpeg', caption: "CSS", progressbar: 60},
-                        {img: 'zurb.png', caption: "Zurb", progressbar: 60},
-                        {img: 'font-awesome.png', caption: "Font Awesome", progressbar: 60},
-                        {img: 'c3.png', caption: "C3", progressbar: 60},
+                            {img: "HTML5.png", caption: "HTML", progressbar: 60}, 
+                            {img: 'JavaScript.png', caption: "ecmascript", progressbar: 60},
+                            {img: 'jquery.png', caption: "jQuery", progressbar: 60},
+                            {img: 'Angular.png', caption: "Angular", progressbar: 60},
+                            {img: 'jqueryui.png', caption: "jQueryUI", progressbar: 60},
+                            {img: 'vuejs.jpg', caption: "Vuejs", progressbar: 60},
+                            {img: 'materilezecss.jpg', caption: "Materialize", progressbar: 60},
+                            {img: 'twitter-bootstrap.jpg', caption: "Bootstrap", progressbar: 60},
+                            {img: 'css.jpeg', caption: "CSS", progressbar: 60},
+                            {img: 'zurb.png', caption: "Zurb", progressbar: 60},
+                            {img: 'font-awesome.png', caption: "Font Awesome", progressbar: 60},
+                            {img: 'c3.png', caption: "C3", progressbar: 60},
                         ]
+                } 
+            })  
+
+            // create a root instance
+            new Vue({
+              el: '#row2',
+                data:{
+                    imgNames: [
+                        {img: 'php.jpg', caption: "PHP", progressbar: 60}, 
+                        {img: "ZendFramework.png", caption: "Zend Framework", progressbar: 60}, 
+                        {img: "symfony.png", caption: "Symfony", progressbar: 60}, 
+                        {img: "codeigniter.png", caption: "CodeIgniter", progressbar: 60},
+                        {img: "laravel.png", caption: "Laravel", progressbar: 60},
+                        {img: "doctrine.jpg", caption: "Doctrine", progressbar: 60}
+                    ]
                 } 
             })  
 
@@ -360,6 +283,22 @@
                         {img: "postgresql.png", caption: "PostgreSQL", progressbar: 60}, 
                         {img: "oracle-database.png", caption: "Oracle", progressbar: 60}, 
                         {img: "SQL-Server.png", caption: "SQL Server", progressbar: 60}
+                    ]
+                } 
+            })  
+
+            // create a root instance
+            new Vue({
+              el: '#row4',
+                data:{
+                    imgNames: [
+                        {img: 'vim.jpeg', caption: "Vim", progressbar: 60}, 
+                        {img: "git.png", caption: "Git", progressbar: 60}, 
+                        {img: "gitlab.png", caption: "GitLab", progressbar: 60}, 
+                        {img: "subversion.png", caption: "SVN", progressbar: 60},
+                        {img: "ubuntu.png", caption: "Ubuntu", progressbar: 60},
+                        {img: "vagrant.png", caption: "Vagrant", progressbar: 60},
+                        {img: "docker.png", caption: "Docker", progressbar: 60}
                     ]
                 } 
             })  
