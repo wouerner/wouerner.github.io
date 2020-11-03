@@ -3,7 +3,7 @@
         <div class="w-side-bar">
             <img class="logo animate__animated animate__bounce" alt="logo" src="./assets/logo.png">
             <h1 class="w-title">Wouerner Brandão</h1>
-                <ul class="w-menu">
+            <ul class="w-menu">
                 <li class="nav-item">
                     <router-link to="/" class="nav-link">
                         <i class="fas fa-home"></i> Inicio 
@@ -20,11 +20,11 @@
                     </router-link>
                 </li>
                 <li class="nav-item">
-                   <router-link to="/experience" class="nav-link">
-                       <i class="far fa-gem"></i> Experiências
-                   </router-link>
+                    <router-link to="/experience" class="nav-link">
+                        <i class="far fa-gem"></i> Experiências
+                    </router-link>
                 </li>
-                </ul>
+            </ul>
         </div>
         <div class="w-content">
             <router-view />
