@@ -1,9 +1,9 @@
 <template>
     <div class="w-container">
-        <div>
-            <img alt="Vue logo" src="./assets/logo.png">
-            <h1>Wouerner Brandão</h1>
-            <div class="navbar-nav mr-auto">
+        <div class="w-side-bar">
+            <img class="logo" alt="logo" src="./assets/logo.png">
+            <h1 class="w-title">Wouerner Brandão</h1>
+                <ul class="w-menu">
                 <li class="nav-item">
                     <router-link to="/" class="nav-link">Home</router-link>
                 </li>
@@ -16,9 +16,9 @@
                 <li class="nav-item">
                     <router-link to="/experience" class="nav-link">Experiencias</router-link>
                 </li>
-            </div>
+                </ul>
         </div>
-        <div>
+        <div class="w-content">
             <router-view />
         </div>
     </div>
@@ -37,21 +37,53 @@ export default class App extends Vue {}
 </script>
 
 <style>
+body{
+    background-color: #373a40;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+a {
+     text-decoration: none;
+     color: #19d3da;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: white;
-  margin-top: 60px;
+  color: #eeeeee;
+/*  margin-top: 60px;*/
+height: inherit;
 }
-body{
-background-color: black;
+.w-side-bar{
+background-color: #686d76;
+height: 100%;
+padding: 5px;
+}
+.w-title{
+font-size:22px;
+}
+.w-menu {
+ list-style: none;
+ padding: 0;
+}
+.w-content {
+ padding: 5px;
+}
+
+.logo {
+width: 100px;
+border-radius: 100%;
+
 }
 
 .w-container{
     display: grid;
     grid-template-columns: auto auto;
-    /*grid-template-rows: 25% 100px auto;*/
+    grid-template-rows: auto;
+    height: 100vh;
 }
 </style>
