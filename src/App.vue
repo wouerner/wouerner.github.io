@@ -1,7 +1,10 @@
 <template>
     <div class="w-container">
         <div class="w-side-bar">
-            <img class="logo animate__animated animate__bounce" alt="logo" src="./assets/logo.png">
+            <div>
+            <span class="block">
+                <img class="logo-img" alt="logo" src="./assets/logo.png">
+            </span>
             <h1 class="w-title">Wouerner Brandão</h1>
             <ul class="w-menu">
                 <li class="nav-item">
@@ -25,6 +28,7 @@
                     </router-link>
                 </li>
             </ul>
+            </div>
         </div>
         <div class="w-content">
             <router-view />
@@ -79,9 +83,19 @@ i {
 }
 
 .w-side-bar {
-    background-color: #686d76;
+    display: flex;
+    justify-content: center;
     height: 100%;
     padding: 5px;
+}
+
+.w-side-bar > div{
+    display:block;
+    height: max-content;
+    width: 100%;
+    align-self: center;
+    background-color: var(--secondary);
+    border-radius: 10px;
 }
 
 .w-title {
@@ -91,6 +105,7 @@ i {
 .w-menu {
     list-style: none;
     padding: 0;
+display: block;
 }
 
 .w-menu li {
@@ -114,10 +129,62 @@ i {
     padding: 5px;
 }
 
-.logo {
+.logo-img {
+    width: 100px;
+    border-radius: 100%;
+    z-index: 1;
+    position: relative;
+}
+
+/*@keyframes blink{
+    0%{opacity: 0;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
+}*/
+
+.block {
+    display:block;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 25px;
+    /*margin: 300px auto 0;*/
+
     width: 100px;
     border-radius: 100%;
 
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(0deg, #000, #272727);
+}
+
+.block:before  {
+    border-radius: 100%;
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -1px;
+    background: linear-gradient(45deg, var(--white), var(--primary));
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: steam 2s linear infinite;
+}
+
+@keyframes steam {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 0;
+        /*background-position: 400% 0;*/
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.block:before {
+    filter: blur(25px);
 }
 
 .w-container{
