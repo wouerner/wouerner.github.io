@@ -1,0 +1,47 @@
+---
+layout: post
+title:  "Nodejs: Baby steps!"
+date:   2021-12-13 21:22:18 -0300
+categories: nodejs 
+---
+
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+
+Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/
+
+
+    Antes de iniciar
+    Você precisa saber:
+    – Orientação a objetos
+    – Docker
+    – Docker-compose
+    – Git
+
+Vou iniciar no aprendizado dessa linguagem de programação que vai “dominar” o mundo da web.
+
+Material de apoio:
+
+    https://nodejs.org/pt-br/
+    https://nodejs.org/pt-br/docs/
+    https://nodejs.dev/learn
+    https://www.youtube.com/watch?v=LLqq6FemMNQ&list=PLJ_KhUnlXUPtbtLwaxxUxHqvcNQndmI4B
+    https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs
+
+Índice
+
+    Parte 00
+    Parte 01
+    Parte 02
+    Parte 03
+    Parte 04
+    Parte 05
