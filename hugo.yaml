@@ -2,3 +2,9 @@ baseURL: https://wouerner.github.io/
 languageCode: en-us
 title: Wouerner.Dev 
 theme: ["PaperMod"]
+
+
+services:
+  googleAnalytics:
+    ID: G-8RSX534X2K
+
