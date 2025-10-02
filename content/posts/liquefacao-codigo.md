@@ -1,7 +1,7 @@
 +++
 title = 'Liquefacao Codigo'
 date = 2025-09-30T11:58:51-03:00
-draft = true
+draft =  false
 +++
 
 A Liquefação do Código: Da pedra a larva.
