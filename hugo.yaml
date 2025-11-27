@@ -1,6 +1,6 @@
-baseURL: https://wouerner.github.io/
+baseURL: https://blog.wouerner.dev/
 languageCode: en-us
-title: blog.wouerner.Dev 
+title: blog.wouerner.dev 
 theme: ["PaperMod"]
 
 
