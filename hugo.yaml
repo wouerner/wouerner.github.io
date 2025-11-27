@@ -2,7 +2,7 @@ baseURL: https://blog.wouerner.dev/
 languageCode: en-us
 title: blog.wouerner.dev 
 theme: ["PaperMod"]
-
+copyright: "© {{ now.Year }} {{ .Site.Title }}. Publicado sob licença [CC0](https://creativecommons.org/publicdomain/zero/1.0/deed.pt)."
 
 services:
   googleAnalytics:
